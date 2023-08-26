@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html"><span style="color: black;">DOT</span><span style="color: rgba(129, 102, 206, 1); margin-bottom: 42px;">CARS</span></a>
+                </div>
+            </div>
+            <div class="right-side">
+                <ul>
+                    <li class="right-side"><a href="#" style="color:rgb(0, 0, 0) ; text-decoration: none;">Blog</a></li>
+                    <li class="right-side"><a href="#" style="color:rgb(0, 0, 0); text-decoration: none; ">About</a></li>
+                    <li class="right-side"><a href="#" style="color:rgb(0, 0, 0); text-decoration: none; ">Contact Us</a></li>
+                    <li class="right-side"><a href="#" style="color:rgb(0, 0, 0); text-decoration: none; ">Log in</a></li>
+                    <button class="btn" type="button">Register</button>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="content-wrapper">
+            <div class="two-column-wrapper">
+                <div class="car-content-wrapper" style="padding-left:99px;">
+                    <h1 class="text">We will help you find your perfect car</h1>
+                    <h3 class="text-1" style="font-size: 16px;">Every dream start with a passion and every living starts with a dream of a perfect life. Here we are helping you to get you a perfect car with the best deals</h3>
+                    <button class="btn-1" type="button" style="font-size: 19px; border-radius: 19px; padding: 2px 6px 2px 6px; border: none;">Get started</button>   
+                </div>
+                <div class="first-image">
+                    <img src="images/car3.jpg" class="img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="content-wrapper">
+            <div class="two-column-wrapper">
+                <div class="second-image">
+                    <img src="images/car2.jpg">
+                </div>
+                <div class="car-content-wrapper" style="padding-left: 210px;">
+                    <h1 class="text">Claim your best car with us</h1>
+                    <h3 class="text-1" style="font-size: 16px;">Every dream start with a passion and every living starts with a dream of a perfect life. Here we are helping you to get you a perfect car with the best deals</h3>
+                    <button class="btn-1" type="button" style="font-size: 19px; border-radius: 19px; padding: 2px 6px 2px 6px; border: none;">Get started</button>   
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+
+    <div class="centre">
+        <div class="dotcars">
+            <h1 style="font-weight:bolder; color:#ffff">Get Started with DOTCARS</h1>
+            <h3 class="subscribe">Subscribe and find super attractive price Quotes  <span><span>from us.</span> Find your ride soon</span></h3>
+            <button class="btn-2" type="button" style="font-size: 19px; border-radius: 7px; padding: 6px 6px 2px 6px; border: none; color: rgba(129, 102, 206, 1); cursor: pointer;">Subscribe now</button> 
+        </div>  
+    </div>
+    <section>
+        <footer>
+            <div class="footcar">
+                <a href="index.html"><span style="color: black; text-decoration: none;">DOT</span><span style="color: rgba(129, 102, 206, 1); margin-bottom: 42px; text-decoration: none;">CARS</span></a>
+            </div>
+            <div class="footer">
+                <span>Our mission to help people find </span><br>
+                <span>carsof their dreams easily and</span><br> 
+                <span>affordable...</span>
+                
+            </div>
+            <div class="footer1">
+                <h2 style="font-size: larger;">Support</h2>
+                <span>FAQ'S</span><br>
+                <span>Help</span><br> 
+                <span>Contact</span>
+            </div>
+            <div class="footer1">
+                <h2 style="font-size: larger;">Our Company</h2>
+                <span>How we work</span><br>
+                <span>Capital</span><br> 
+                <span>Security</span>
+            </div>
+            <div class="footer1">
+                <h2 style="font-size: larger;">About Us</h2>
+                <span>Who we are</span><br>
+                <span>Features</span><br> 
+                <span>News & Blog</span>
+            </div>
+        </footer>
+    </section>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.first-image,.second-image')
+
+    portfolioItems.forEach(portfolioItem =>{
+        portfolioItem.addEventListener('mouseover',()=>{
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+        portfolioItem.addEventListener('mouseout',()=>{  
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>
